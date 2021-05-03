@@ -119,6 +119,14 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
+# collectstaticなどを行った際にファイルを設置するstaticフォルダの場所を記述（開発の際は必要ないのでコメントアウトしておく）
+# STATIC_ROOT = os.path.join(BASE_DIR, 'static/')
+
+# htmlファイルなどから読み込むstaticフォルダの場所を記述
+STATICFILES_DIRS = [
+    os.path.join(BASE_DIR, 'static/')
+]
+
 # Default primary key field type
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
 
