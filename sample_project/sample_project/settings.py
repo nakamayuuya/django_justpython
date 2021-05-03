@@ -131,3 +131,9 @@ STATICFILES_DIRS = [
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+# サービス内でmediaフォルダのURLパスを設定
+MEDIA_URL = '/media/'
+
+# アップロードファイルなどを読み込む際のフォルダの場所を記述
+MEDIA_ROOT = 'media/'
